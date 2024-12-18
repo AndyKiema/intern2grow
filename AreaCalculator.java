@@ -27,13 +27,21 @@ public class AreaCalculator{
            long squarearea=squarelength*squarelength;
            System.out.println("The area of the square is "+squarearea+" centimetres");
         }
-        if(shape==2){
+        else if(shape==2){
             System.out.println("Enter the length of the rectangle in centimetres");
             int rectanglelength=sc.nextInt();
             System.out.println("Enter the width of the rectangle in centimetres");
             int rectanglewidth=sc.nextInt();
             long rectanglearea=rectanglelength*rectanglewidth;
             System.out.println("The area of the rectangle is "+rectanglearea+" centimetres");
+        }
+        else{
+            System.out.println("Enter the radius of the circle in centimetres");
+            int circleradius=sc.nextInt();
+            double pi=3.1429;
+            double carea=pi*(circleradius*circleradius);
+            int circlearea=(int)carea;
+            System.out.println("The area of the square is "+circlearea+" centimetres");
         }
     }
 }
