@@ -27,5 +27,13 @@ public class AreaCalculator{
            long squarearea=squarelength*squarelength;
            System.out.println("The area of the square is "+squarearea+" centimetres");
         }
+        if(shape==2){
+            System.out.println("Enter the length of the rectangle in centimetres");
+            int rectanglelength=sc.nextInt();
+            System.out.println("Enter the width of the rectangle in centimetres");
+            int rectanglewidth=sc.nextInt();
+            long rectanglearea=rectanglelength*rectanglewidth;
+            System.out.println("The area of the rectangle is "+rectanglearea+" centimetres");
+        }
     }
 }
