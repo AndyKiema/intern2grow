@@ -1,14 +1,14 @@
 public class CalculatorLibrary {
-    public int add(int x, int y){
+    public static double add(double x, double y){
       return x+y;
     }
-    public int subtract(int x, int y){
+    public static double subtract(double x, double y){
         return x-y;
     }
-    public int multiply(int x, int y){
+    public static double multiply(double x, double y){
         return x*y;
     }
-    public int divide(int x, int y){
+    public static double divide(double x, double y){
         return x/y;
       }
     public static void main(String[] args) {
