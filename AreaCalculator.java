@@ -41,7 +41,7 @@ public class AreaCalculator{
             double pi=3.1429;
             double carea=pi*(circleradius*circleradius);
             int circlearea=(int)carea;
-            System.out.println("The area of the square is "+circlearea+" centimetres");
+            System.out.println("The area of the circle is "+circlearea+" centimetres");
         }
     }
 }
