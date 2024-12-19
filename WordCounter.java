@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class WordCounter{
     public static void main(String[] args) throws FileNotFoundException {
         Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the path of the file:");
         String fpath=sc.nextLine();
         File fl=new File(fpath);   //Holds file path
         Scanner filescanner=new Scanner(fl); //Reads file
@@ -15,10 +16,27 @@ public class WordCounter{
         int characters=text.toString().length();
         int words=text.toString().split("\\s+").length; //"\\s+" means white spaces
         int sentences=text.toString().split("!.?").length; //"!.?" means anywhere where there is a mark that signifies a new sentence
-
+       
         System.out.println("This file has:");
-        System.out.println(characters+" characters");
-        System.out.println(words+" words");
-        System.out.println(sentences+" sentences");
+        if(characters>1){
+            System.out.println(characters+" characters");
+        }
+        else{
+            System.out.println(characters+" character");
+        }
+
+        if(words>1){
+            System.out.println(words+" words");
+        }
+        else{
+            System.out.println(words+" word");
+        }
+
+        if(sentences>1){
+            System.out.println(sentences+" sentences");
+        }
+        else{
+            System.out.println(sentences+" sentence");
+        }
     }
 }
