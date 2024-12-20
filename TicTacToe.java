@@ -34,6 +34,9 @@ public class TicTacToe {
         }
         return true;
     }
+    public static boolean isMoveValid(int row, int column){
+        return row>=0 && row<3 && column>=0 && column<3 && board[row][column]==' ';
+    }
     public static void main(String[] args) {
         
     }
