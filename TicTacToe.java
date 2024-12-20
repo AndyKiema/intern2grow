@@ -18,7 +18,21 @@ public class TicTacToe {
         }
     }
     public static boolean checkwin(char player){
-         
+         for(int i=0; i<3; i++){
+            if(board[i,0]==player && board[i,1]==player && board[i,2]==player)||(board[0,i]==player && board[1,i]==player && board[2,i]){
+                return true;
+            }
+         }
+    }
+    public static boolean isBoardFull(){
+        for(int i=0; i<3; i++){
+            for(int j=0; j<3; j++){
+                if(board[i][j]==' '){
+                    return false;
+                }
+            }
+        }
+        return true;
     }
     public static void main(String[] args) {
         
